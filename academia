@@ -1,0 +1,175 @@
+# Projetos-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html.body {
+    height: 100%;
+    
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 96vh;
+    min-height: 800px;
+    padding: 40px 2%;
+    background: linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)),url('img/natação.jpg');
+    background-size: cover;
+
+}
+
+header .menu {
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 5px rgb(0, 145, 255);
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+} 
+
+header nav.desktop-menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav.desktop-menu ul li {
+    padding: 0 20px;
+}
+
+header nav.desktop-menu ul li a {
+    line-height: 100px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 110, 255);
+    transition: 0.3s all;
+    font-family: 'Nunito', sans-serif;
+    
+    
+}
+
+header nav.desktop-menu ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+header .logo {
+    width: 200px;
+    height: 60px;
+    background: url(img/aquazul.png) no-repeat;
+    background-position: ;
+    background-size: contain;
+    position: relative;
+    top: 0;
+}
+
+header .chamada1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+header .chamada1 h1 {
+    color: white;
+    font-size: 5rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-shadow: 5px 8px 0 black;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+header .chamada1 span {
+    color:rgb(0, 110, 255);
+    
+}
+
+header .chamada1 p {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 30px;
+    font-weight: bolder;
+    
+}
+
+header .chamada1 button {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-size: 1.3rem;
+    font-size: 400;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s all;
+    
+}
+
+header .chamada1 button:hover {
+    background: rgb(0, 110, 255);
+    transform: scale(1.1);
+    filter: none;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Concert+One&family=Nunito:ital,wght@0,700;1,700&family=Righteous&family=Yellowtail&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Aquazul</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+     <header id="home">
+         <div class="menu">
+             <div class="logo"></div>
+             <nav class="desktop-menu">
+                 <ul>
+                     <li><a href="https://www.google.com/maps/contrib/113097341181847633021/place/ChIJXzjZLxHhYY0Rzxce9X1ITfA/@0.0394595,-51.0677573,17z/data=!4m6!1m5!8m4!1e2!2s113097341181847633021!3m1!1e1" target="_blank" rel="noopener noreferrer">Localização</a></li>
+                     <li><a href="" target="_blank" rel="noopener noreferrer">Atendimento</a></li>
+                     <li><a href="somos.html" target="_blank" rel="noopener noreferrer">Quem somos</a></li>
+                     <li><a href="" target="_blank" rel="noopener noreferrer">Contato</a></li>
+                </ul>
+             </nav>
+         </div><br><br><br><br><br><br><br><br><br><br><br>
+         <div class="container">
+             <div class="chamada1">
+                 <h1>Academia <span>Aquazul</span><br> 06:00-21:00hr</h1>
+                 <button>Comentários</button>
+                
+
+             </div>
+         </div>
+     </header>
+
+</body>
+</html>
