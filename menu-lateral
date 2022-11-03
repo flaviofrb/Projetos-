@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Fira+Sans:wght@500&family=Montserrat:ital,wght@1,300&family=Oswald:wght@700&family=Poppins:wght@200;300;400;500;700;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    
+        <div class="navigation">
+         
+          <ul>
+            <div><img src="img/Brasão_de_Macapá.svg.png" alt="Logo"></div><br>
+          <li class="list active">
+            <a href="">  
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="tittle">Home</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="">  
+                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                <span class="tittle">Usuário</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="">  
+                <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                <span class="tittle">Mensagem</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="">  
+                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                <span class="tittle">Configuração</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="">  
+                <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                <span class="tittle">Ajuda</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="">  
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <span class="tittle">Senha</span>
+            </a>
+          </li>
+
+          <li class="list">
+            <a href="login.html">  
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                <span class="tittle">Sair</span>
+            </a>
+          </li>
+          
+          </ul>
+        </div>
+
+        <script src="menu.js"></script>
+    
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+
+
+</html>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  #b4e0bad7;
+    
+}
+
+.navigation {
+    position: relative;
+    height: 700px;
+    background: #1aa531;
+    width: 70px;
+    box-shadow: 10px 0 0 #424242;
+    border-left: 10px solid #1aa531;
+    overflow-x: hidden;
+    transition: all 0.2s;
+    margin-left: -1291px;
+    transform-style: preserve-3d;
+
+  
+}
+
+.navigation:hover{
+    width: 300px;
+    transform: translateX(40%);
+    transition: all 0.2s ;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+   
+}
+
+
+.navigation ul li a:hover{
+    background-color: #99eea2d7;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+   
+}
+
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+
+
+
+.navigation ul li a .icon ion-icon{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.navigation ul li a .tittle{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navigation ul li.active{
+    background: #424242;
+    
+}
+
+.navigation ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: #1aa531;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #1aa531;
+}
+
+.navigation ul  li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: #1aa531;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #1aa531;
+
+}
+
+img {
+width: 85px;
+margin-left: 95px;
+margin-top: -20px;
+box-shadow: 1px 1px 3px #bbcfbdd7;
+background-color: #49c25d;
+border-radius: 5px;
+}
