@@ -1,0 +1,150 @@
+   <div>
+   <a href="" class="forget"></a>
+                <a href="#" class="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                   <button class="continue"> Entrar</button>
+                    
+                </a>
+              </div>
+              
+              
+              
+              .forget{
+   font-size: 15px;
+   color: #040404d7;
+   float: right;
+   margin-top: -11px;
+   margin-right: 190px;
+   
+}
+
+.forget:hover{
+    text-decoration: none;
+    color: rgb(54, 179, 126);
+   
+}
+
+.btn  {
+    position: relative;
+    display: inline-block;
+    padding: 1px 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: .5s;
+    float: left;
+    overflow: hidden;
+    transition: 0.5s all ;
+    left: 200px;
+    top: 20px;
+    
+   
+
+}
+
+.continue{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(54, 179, 126);
+    padding: 5px 17px;
+    transition: 0.5s all;
+}
+
+.continue:hover{
+    background-color: rgb(54, 179, 126);
+    color: white;
+   
+}
+
+
+.btn span{
+    position: absolute;
+    display: block;
+}
+
+.btn span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, rgb(54, 179, 126));
+    animation: btn1 1s linear infinite;
+}
+
+@keyframes btn1{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+    
+}
+.btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(180deg, transparent, rgb(54, 179, 126));
+    animation: btn2 1s linear infinite;
+    animation-delay: .20s;
+}
+
+@keyframes btn2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+
+    }
+}
+
+.btn span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, rgb(54, 179, 126));
+    animation: btn3 1s linear infinite;
+    animation-delay: .45s;
+}
+
+@keyframes btn3 {
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+
+.btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(26deg, transparent, rgb(54, 179, 126));
+    animation: btn4 1s linear infinite;
+    animation-delay: .70s;
+}
+
+@keyframes btn4{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
