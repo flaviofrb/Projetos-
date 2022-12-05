@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal JavaScript</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+  </head>
+  <body>
+   
+    <button id="open-modal"><i class="bx bx-log-out" id="log_out"></i></button>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Sair</h2>
+       
+      </div>
+      <div class="modal-body">
+        <p>
+          Deseja realmente sair?
+        </p>
+        <hr />
+        <div class="btns">
+            <button class="btnOK" id="close-modal">Voltar</button>
+            <button class="btnClose" id="close-modal"><a href="sair.html" class="mudar">
+              Sair
+            </a></button>
+          </div>
+      </div>
+    </div>
+
+
+
+   <script>
+const openModalButton = document.querySelector("#open-modal");
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+
+const toggleModal = () => {
+  modal.classList.toggle("hide");
+  fade.classList.toggle("hide");
+};
+
+[openModalButton, closeModalButton, fade].forEach((el) => {
+  el.addEventListener("click", () => toggleModal());
+});
+   </script>
+
+   
+  </body>
+</html>
+
+
+
+* {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    background-color: rgb(243, 21, 21);
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+    transition: .5s all;
+  }
+
+  button:hover{
+      background-color: rgb(243, 128, 128);
+     
+  }
+  
+  #open-modal {
+    background-color: #007bff;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+
+ 
+  
+  #fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+  #modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  
+  #fade,
+  #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .modal-body p {
+    margin-bottom: 1rem;
+  }
+  
+  #modal.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal.hide {
+    top: 0;
+  }
+
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .btns button {
+    font-size: medium;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+   
+  }
+  
+  .btnOK {
+   background-color: rgb(10, 118, 235)!important;
+   transition: .5s all;
+  
+   
+  
+  }
+  
+  .btnOK:hover{
+      background-color: rgb(119, 178, 241)!important;
+     
+  }
+
+
+
+.mudar{
+  text-decoration: none;
+  color: white;
+}
+
+  .btnClose   {
+    background-color: rgb(145, 139, 139)!important;
+    transition: .5s all;
+   
+   }
+  
+   .btnClose:hover{
+       background-color: rgba(150, 143, 143, 0.64)!important;
+   }
+
+
+   hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+  }
