@@ -15,7 +15,7 @@
   <div class="sidebar">
     <div class="logo_details">
    <i class="bx bx1-audible icon"></i>
-   <div class="logo_name">SEED</div>
+   <div class="logo_name">Titulo</div>
    <i class="bx bx-menu" id="btn"></i>
     </div>
     <ul class="nav-list">
